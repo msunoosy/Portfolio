@@ -1,11 +1,12 @@
-import './App.css'
 
+import './App.css';
+import Hero from './sections/Hero/Hero';
 function App() {
 
 
   return (
     <>
-     sunoos
+    <Hero/>
     </>
   )
 }
