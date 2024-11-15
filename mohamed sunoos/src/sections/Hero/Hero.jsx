@@ -18,7 +18,7 @@ function Hero() {
         <img src={themeIcon}></img>
       </div>
       <div className={styles.info}>
-      <h1>Zamzamy Mohamed<br/>Sunoos</h1>
+      <h1>Zamzamy Mohamed<br/>Sunoosy</h1>
       <h2>Full stack developer</h2>
       <span>
         <a href="https://www.linkedin.com/" target="_blank">
