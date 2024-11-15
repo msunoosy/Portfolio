@@ -1,17 +1,25 @@
 import styles from "./HeroStyles.module.css";
 import heroImg from "../../assets/hero-img.png";
 import themeIcon from "../../assets/sun.svg";
-import linkedinIcon from "../../assets/linkedin-light.svg"
-import GithubIcon from "../../assets/github-light.svg"
-import twitterIcon from "../../assets/twitter-light.svg"
-import cv from "../../assets/cv.pdf"
+import linkedinLight from "../../assets/linkedin-light.svg";
+import linkedinDark from "../../assets/linkedin-dark.svg";
+import githubLight from "../../assets/github-light.svg";
+import githubDark from "../../assets/github-dark.svg";
+import twitterLight from "../../assets/twitter-light.svg";
+import twitterDark from "../../assets/twitter-dark.svg";
+import cv from "../../assets/cv.pdf";
 import { useTheme } from "../../common/themeContext";
 import moon from '../../assets/moon.svg';
-import sun from '../../assets/sun.svg'
+import sun from '../../assets/sun.svg';
 
 function Hero() {
   const {theme,toggleTheme}=useTheme()
   const themeIcon =theme === 'light'? sun:moon;
+  const linkedinIcon = theme ==='light' ? linkedinLight : linkedinDark;
+  const GithubIcon=theme==='light' ?githubLight : githubDark;
+  const twitterIcon=theme=='light' ?twitterLight:twitterDark;
+  
+
   return (
     <section id="hero" className={styles.container}>
       <div className={styles.classModeContainer}>
