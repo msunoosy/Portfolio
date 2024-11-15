@@ -5,8 +5,10 @@ import linkedinIcon from "../../assets/linkedin-light.svg"
 import GithubIcon from "../../assets/github-light.svg"
 import twitterIcon from "../../assets/twitter-light.svg"
 import cv from "../../assets/cv.pdf"
+import { useTheme } from "../../common/themeContext";
 
 function Hero() {
+  const {theme,toggleTheme}=useTheme()
   return (
     <section id="hero" className={styles.container}>
       <div className={styles.classModeContainer}>
@@ -15,7 +17,7 @@ function Hero() {
           src={heroImg}
           alt="Profile pic of sunoos"
         ></img>
-        <img src={themeIcon}></img>
+        <img src={themeIcon} onClick={toggleTheme}></img>
       </div>
       <div className={styles.info}>
       <h1>Zamzamy Mohamed<br/>Sunoosy</h1>
